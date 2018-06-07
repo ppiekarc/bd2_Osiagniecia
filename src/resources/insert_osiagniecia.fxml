@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.controller.InsertOsiagnieciaControler">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <MenuButton fx:id="TypMenu" mnemonicParsing="false" text="Typ Osiągniecia" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="342.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Id urzytkownika" />
+                        <TextField fx:id="IdUrzytkownikaText" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="556.0" prefWidth="124.0">
+                     <children>
+                        <Label text="Nazwa Osiagniecia" />
+                        <TextField fx:id="NazwaOsiagnieciaText" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Nazwa Podmiotu" />
+                        <TextField fx:id="NazwaPodmiotuText" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Miejsce Uzyskania" />
+                        <TextField fx:id="MiejsceUzyskaniaText" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="60.0" prefWidth="121.0">
+                     <children>
+                        <Label text="Data Uzyskania" />
+                        <DatePicker fx:id="DataUzyskania" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="60.0" prefWidth="146.0">
+                     <children>
+                        <Label text="Data Wygaśnięcia" />
+                        <DatePicker fx:id="DataWygasniecia" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="342.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Czas szkolenia" />
+                        <TextField fx:id="CzasSzkoleniaText" disable="true" focusTraversable="false" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="556.0" prefWidth="124.0">
+                     <children>
+                        <Label text="Nazwa Szkoły" />
+                        <TextField fx:id="NazwaSzkolyText" disable="true" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Numer Licencji" />
+                        <TextField fx:id="NumerLicencjiText" disable="true" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="41.0" prefWidth="100.0">
+                     <children>
+                        <MenuButton fx:id="DziedzinaWiedczyMenu" mnemonicParsing="false" text="Dziedziny" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <MenuButton fx:id="EtykietyMenu" mnemonicParsing="false" text="Etykiety" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="97.0" prefWidth="139.0">
+                     <children>
+                        <MenuButton fx:id="KategorieMenu" mnemonicParsing="false" text="Kategorai Stopni" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <MenuButton fx:id="StopnieMenu" mnemonicParsing="false" text="Stopnie" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Ocena   " />
+                  <TextField fx:id="OcenaText" />
+                  <VBox alignment="TOP_CENTER" prefHeight="97.0" prefWidth="109.0">
+                     <children>
+                        <MenuButton fx:id="JednostkaMenu" mnemonicParsing="false" prefHeight="27.0" prefWidth="88.0" text="Jednostka" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="134.0" prefWidth="645.0">
+               <children>
+                  <Label text="Opis" />
+                  <TextField fx:id="OpisText" prefHeight="93.0" prefWidth="585.0" />
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="171.0" prefWidth="645.0">
+               <children>
+                  <Button fx:id="button" mnemonicParsing="false" onAction="#buttonAction" text="Dodaj Osiagniecie" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>
